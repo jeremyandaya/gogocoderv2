@@ -3238,6 +3238,7 @@
  	color: #ffffff;
  	background-color: #5bc0de;
  	border-color: transparent;
+ 	margin-left: -8px;
  }
  .btn-info:focus,
  .btn-info.focus {
@@ -5877,7 +5878,7 @@
  	display: none;
  	overflow: hidden;
  	position: fixed;
- 	top: 0;
+ 	top: 250px;
  	right: 0;
  	bottom: 0;
  	left: 0;
