@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root to: 'welcome#index'
 
   get 'welcome' => 'welcome#welcome'
+  get 'html/lesson1' => 'html#lesson1'
 
 
 
