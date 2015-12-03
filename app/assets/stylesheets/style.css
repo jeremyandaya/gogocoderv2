@@ -1,0 +1,158 @@
+body {
+	font-family: Courier;
+	margin: 0px; /* for IE6 / IE7 */
+}
+
+#container-body {
+	text-align: center;
+}
+
+#draggable, #draggable2 { 
+	width: 100px; 
+	height: 100px; 
+	padding: 0.5em; 
+	float: left; 
+	margin: 10px 10px 10px 0; 
+}
+
+#droppable { 
+	width: 150px; 
+	height: 150px; 
+	padding: 0.5em; 
+	float: left; 
+	margin: 10px; 
+}
+
+#container { 
+	width: 360px; 
+	height: 550px; 
+	padding: 0.5em; 
+	float: left; 
+	margin: 10px; 
+	border: 1px solid black; 
+}
+
+.border { 
+	border: 3px solid green; 
+}
+
+/*#welcome-box {
+	border: 1px solid yellow;
+	margin: 0px 5px 0px 5px;
+}*/
+
+#welcome-box-row {
+	width: 1000px;
+	text-align: center;
+}
+
+#redips-drag {
+
+}
+
+/* drag objects (DIV inside table cells) */
+.redips-drag {
+	cursor: move;
+	margin: auto;
+	z-index: 10;
+	background-color: white;
+	text-align: center;
+	font-size: 10pt; /* needed for cloned object */
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	/* without width, IE6/7 will not apply filter/opacity to the element ?! */
+	/* IE needs element layout */
+	width: 140px;
+	height: 25px;
+	line-height: 25px;
+	/* round corners */
+	border-radius: 4px; /* Opera, Chrome */
+	-moz-border-radius: 4px; /* FF */
+}
+
+/* tables */
+div#drag table {
+	background-color: #eee;
+	border-collapse: collapse;
+	font-size: 20px;
+	margin: auto;
+}
+
+/* table cells */
+div#drag td {
+	height: 32px;
+	border: 1px solid white;
+	text-align: center;
+	font-size: 10pt;
+	padding: 2px;
+	width: 145px;
+}
+
+/* green objects */
+.green {
+	border: 2px solid #499B33;
+	font-size: 15px;
+	color: black;
+}
+
+/* orange objects */
+.orange {
+	border: 2px solid #BF6A30;
+	font-size: 15px;
+	color: black;
+}
+
+/* yellow objects */
+.yellow {
+	border: 2px solid #F0E68C;
+	font-size: 15px;
+	color: black;
+}
+
+/* blank cells (to create gap between left column and message row) */
+.blank {
+	background-color: white;
+}
+
+/* green cell */
+.green_cell {
+	background-color: #AFD0A7;
+	width: 145px;
+    height: 33px;
+    border: 1px solid gray;
+}
+
+/* orange cell */
+.orange_cell {
+	background-color: #DDC5B5;
+	width: 145px;
+    height: 33px;
+    border: 1px solid gray;
+}
+
+/* yellow cell */
+.yellow_cell {
+	background-color: #FFFACD;
+	width: 145px;
+    height: 33px;
+    border: 1px solid gray;
+}
+
+/* message line */
+#message {
+	color: white;
+	background-color: #aaa;
+	height: 50px;
+    font-size: 20px;
+}
+
+/* left column and corners in main table */
+.dark {
+	background-color: #e0e0e0;
+	border: 1px solid gray;
+}
+
+
+
+
+
