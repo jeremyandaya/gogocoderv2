@@ -4279,10 +4279,10 @@
  }
  .navbar-brand {
  	float: left;
- 	padding: 9.5px 15px;
- 	font-size: 19px;
+ 	padding: 15px 15px;
+ 	font-size: 25px;
  	line-height: 21px;
- 	height: 40px;
+ 	height: 50px;
  }
  .navbar-brand:hover,
  .navbar-brand:focus {
@@ -4366,7 +4366,7 @@
  		float: left;
  	}
  	.navbar-nav > li > a {
- 		padding-top: 9.5px;
+ 		padding-top: 15px;
  		padding-bottom: 9.5px;
  	}
  }
@@ -4515,6 +4515,7 @@
  }
  .navbar-default .navbar-nav > li > a {
  	color: #ebebeb;
+ 	font-size: 15px;
  }
  .navbar-default .navbar-nav > li > a:hover,
  .navbar-default .navbar-nav > li > a:focus {

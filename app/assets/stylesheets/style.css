@@ -117,24 +117,24 @@ div#drag td {
 /* green cell */
 .green_cell {
 	background-color: #AFD0A7;
-	width: 145px;
-    height: 33px;
+	width: 160px;
+    height: 35px;
     border: 1px solid gray;
 }
 
 /* orange cell */
 .orange_cell {
 	background-color: #DDC5B5;
-	width: 145px;
-    height: 33px;
+	width: 160px;
+    height: 35px;
     border: 1px solid gray;
 }
 
 /* yellow cell */
 .yellow_cell {
 	background-color: #FFFACD;
-	width: 145px;
-    height: 33px;
+	width: 160px;
+    height: 35px;
     border: 1px solid gray;
 }
 

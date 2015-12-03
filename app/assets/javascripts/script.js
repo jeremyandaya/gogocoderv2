@@ -43,17 +43,89 @@ $(document).ready(function() {
 
     $("#head2-drop").droppable({ hoverClass: 'border', tolerance: 'fit', accept: '#head2-drag',
         out: function() {
-            drop4 = false;
+            drop5 = false;
         },
         drop: function() {
-            drop4 = true;
+            drop5 = true;
+        }
+    });
+
+    $("#title1-drop").droppable({ hoverClass: 'border', tolerance: 'fit', accept: '#title1-drag',
+        out: function() {
+            drop6 = false;
+        },
+        drop: function() {
+            drop6 = true;
+        }
+    });
+
+    $("#title2-drop").droppable({ hoverClass: 'border', tolerance: 'fit', accept: '#title2-drag',
+        out: function() {
+            drop7 = false;
+        },
+        drop: function() {
+            drop7 = true;
+        }
+    });
+
+    $("#title-drop").droppable({ hoverClass: 'border', tolerance: 'fit', accept: '#title-drag',
+        out: function() {
+            drop8 = false;
+        },
+        drop: function() {
+            drop8 = true;
+        }
+    });
+
+    $("#body1-drop").droppable({ hoverClass: 'border', tolerance: 'fit', accept: '#body1-drag',
+        out: function() {
+            drop9 = false;
+        },
+        drop: function() {
+            drop9 = true;
+        }
+    });
+
+    $("#body2-drop").droppable({ hoverClass: 'border', tolerance: 'fit', accept: '#body2-drag',
+        out: function() {
+            drop10 = false;
+        },
+        drop: function() {
+            drop10 = true;
+        }
+    });
+
+    $("#div1-drop").droppable({ hoverClass: 'border', tolerance: 'fit', accept: '#div1-drag',
+        out: function() {
+            drop11 = false;
+        },
+        drop: function() {
+            drop11 = true;
+        }
+    });
+
+    $("#div2-drop").droppable({ hoverClass: 'border', tolerance: 'fit', accept: '#div2-drag',
+        out: function() {
+            drop12 = false;
+        },
+        drop: function() {
+            drop12 = true;
+        }
+    });
+
+    $("#content-drop").droppable({ hoverClass: 'border', tolerance: 'fit', accept: '#content-drag',
+        out: function() {
+            drop13 = false;
+        },
+        drop: function() {
+            drop13 = true;
         }
     });
     
 });
 
 function myFunction() {
-    if (drop1 == true && drop2 == true && drop3 == true && drop4 == true) {
+    if (drop1 == true && drop2 == true && drop3 == true && drop4 == true && drop5 == true && drop6 == true && drop7 == true && drop8 == true && drop9 == true && drop10 == true && drop11 == true && drop12 == true && drop13 == true) {
         console.log('success');
         document.getElementById("message").innerHTML = "SUCCESS!";
     } else {
@@ -61,3 +133,28 @@ function myFunction() {
         document.getElementById("message").innerHTML = "FAILED!";
     }  
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
