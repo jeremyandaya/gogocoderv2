@@ -3124,6 +3124,7 @@
  	color: #ffffff;
  	background-color: #df691a;
  	border-color: transparent;
+ 	border-radius: 0.4em;
  }
  .btn-primary:focus,
  .btn-primary.focus {
@@ -3181,6 +3182,7 @@
  	color: #ffffff;
  	background-color: #5cb85c;
  	border-color: transparent;
+ 	border-radius: 0.4em;
  }
  .btn-success:focus,
  .btn-success.focus {
@@ -3239,6 +3241,7 @@
  	background-color: #5bc0de;
  	border-color: transparent;
  	margin-left: -8px;
+ 	border-radius: 0.4em;
  }
  .btn-info:focus,
  .btn-info.focus {
@@ -3296,6 +3299,7 @@
  	color: #ffffff;
  	background-color: #f0ad4e;
  	border-color: transparent;
+ 	border-radius: 0.4em;
  }
  .btn-warning:focus,
  .btn-warning.focus {
@@ -3353,6 +3357,7 @@
  	color: #ffffff;
  	background-color: #d9534f;
  	border-color: transparent;
+ 	border-radius: 0.4em;
  }
  .btn-danger:focus,
  .btn-danger.focus {
@@ -3444,7 +3449,7 @@
  	padding: 12px 24px;
  	font-size: 19px;
  	line-height: 1.3333333;
- 	border-radius: 0;
+ 	border-radius: 0.4em;
  }
  .btn-sm,
  .btn-group-sm > .btn {
@@ -4984,7 +4989,7 @@
  }
  .container .jumbotron,
  .container-fluid .jumbotron {
- 	border-radius: 0;
+ 	border-radius: 0.4em;
  	padding-left: 15px;
  	padding-right: 15px;
  }
@@ -5715,6 +5720,7 @@
  	color: #ffffff;
  	background-color: #df691a;
  	border-color: transparent;
+ 	border-radius: 0.4em 0.4em 0em 0em;
  }
  .panel-primary > .panel-heading + .panel-collapse > .panel-body {
  	border-top-color: transparent;
@@ -5733,6 +5739,7 @@
  	color: #ebebeb;
  	background-color: #5cb85c;
  	border-color: transparent;
+ 	border-radius: 0.4em 0.4em 0em 0em;
  }
  .panel-success > .panel-heading + .panel-collapse > .panel-body {
  	border-top-color: transparent;
@@ -5751,6 +5758,7 @@
  	color: #ebebeb;
  	background-color: #5bc0de;
  	border-color: transparent;
+ 	border-radius: 0.4em 0.4em 0em 0em;
  }
  .panel-info > .panel-heading + .panel-collapse > .panel-body {
  	border-top-color: transparent;
@@ -5769,6 +5777,7 @@
  	color: #ebebeb;
  	background-color: #f0ad4e;
  	border-color: transparent;
+ 	border-radius: 0.4em 0.4em 0em 0em;
  }
  .panel-warning > .panel-heading + .panel-collapse > .panel-body {
  	border-top-color: transparent;
@@ -5787,6 +5796,7 @@
  	color: #ebebeb;
  	background-color: #d9534f;
  	border-color: transparent;
+ 	border-radius: 0.4em 0.4em 0em 0em;
  }
  .panel-danger > .panel-heading + .panel-collapse > .panel-body {
  	border-top-color: transparent;
@@ -6976,6 +6986,7 @@
  }
  .panel {
  	border: none;
+ 	border-radius: 0.4em;
  }
  .panel-default > .panel-heading {
  	background-color: #485563;

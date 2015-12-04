@@ -1,0 +1,139 @@
+<div class="container" id="container-body">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>CSS - Lesson 1</h1>
+			<p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus.</p>
+
+			<div class="modal" id="myModal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+							<h4 class="modal-title">Success!</h4>
+						</div>
+						<div class="modal-body">
+							<p>You are ready to go to the next level.</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Check your code</button>
+							<button type="button" class="btn btn-success">Next Level</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal" id="myModal2">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+							<h4 class="modal-title">Fail!</h4>
+						</div>
+						<div class="modal-body">
+							<p>You are not ready to go to the next level.</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Try Again</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="css-drag">
+				<table id="table1">
+					<colgroup>
+						<col width="100"/>
+						<col width="50"/>
+						<col width="100"/>
+						<col width="100"/>
+						<col width="100"/>
+						<col width="100"/>
+						<col width="100"/>
+					</colgroup>
+					<tr>
+						<td class="dark"><div class="css-drag">body</div></td>
+						<td class="green_cell"><div class="css-drag">{</div></td>
+						<td class="dark redips-single" title="Single content cell"><div class="css-drag"></div></td>
+					</tr>
+					<tr>
+						<td class="dark"><div class="css-drag"></div></td>
+						<td class="yellow_cell"><div class="css-drag">background-color:</div></td>
+						<td id="lightblue-drop" class="dark redips-single" title="Single content cell"><div id="3px-drag" class="css-drag">3px solid #73AD21;</div></td>
+					</tr>
+					<tr>
+						<td class="dark"><div class="css-drag">}</div></td>
+						<td class="yellow_cell"><div class="css-drag"></div></td>
+						<td class="dark redips-single" title="Single content cell"><div  class="css-drag"></div></td>
+					</tr>
+					<tr>
+						<td class="dark"><div class="css-drag">p</div></td>
+						<td class="dark redips-single" title="Single content cell"><div  class="css-drag">{</div></td>
+						<td class="green_cell"><div class="css-drag"></div></td>
+					</tr>
+					<tr>
+						<td class="dark"><div id="title1-drag" class="css-drag"></div></td>
+						<td class="dark redips-single" title="Single content cell"><div  class="css-drag">font-family:</div></td>
+						<td class="green_cell" id="timesnew-drop"><div id="absolute-drag" class="css-drag">absolute;</div></td>
+					</tr>
+					<tr>
+						<td class="dark"><div class="css-drag">}</div></td>
+						<td class="dark redips-single" title="Single content cell"></td>
+						<td class="green_cell"></td>
+						
+					</tr>
+					<tr>
+						<td class="dark"><div class="css-drag">li</div></td>
+						<td class="green_cell"><div class="css-drag">{</div></td>
+						<td class="dark redips-single" title="Single content cell"></td>
+						
+					</tr>
+					<tr>
+						<td class="dark"><div class="css-drag"></div></td>
+						<td class="orange_cell"><div class="css-drag">display:</div></td>
+						<td class="dark redips-single" title="Single content cell" id="inline-drop"><div id="timesnew-drag" class="css-drag">"Times New Roman", Times, serif;</div></td>
+					</tr>
+					<tr>
+						<td class="dark"><div class="css-drag">}</div></td>
+						<td class="dark redips-single" title="Single content cell"></td>
+						<td class="green_cell"></td>
+					</tr>
+					<tr>
+						<td class="dark"><div class="css-drag">.right</div></td>
+						<td class="dark redips-single" title="Single content cell"><div class="css-drag">{</div></td>
+						<td class="green_cell"><div class="css-drag"></div></td>
+					</tr>
+					<tr>
+						<td class="dark"><div class="css-drag"></div></td>
+						<td class="dark redips-single" title="Single content cell"><div  class="css-drag">position:</div></td>
+						<td class="green_cell" id="absolute-drop"><div id="inline-drag" class="css-drag">inline;</div></td>
+						
+					</tr>
+					<tr>
+						<td class="dark"><div class="css-drag"></div></td>
+						<td class="orange_cell" id="body2-drop"><div class="css-drag">border:</div></td>
+						<td class="dark redips-single" title="Single content cell" id="3px-drop"><div id="lightblue-drag" class="css-drag">lightblue;</div></td>
+						
+					</tr>
+					<tr>
+						<td class="dark"><div id="title-drag" class="css-drag">}</div></td>
+						<td class="yellow_cell" id="html2-drop"></td>
+						<td class="dark redips-single" title="Single content cell"></td>
+						
+					</tr>
+					<!-- empty row -->
+					<tr>
+						<td colspan="7" class="redips-mark blank"></td>
+					</tr>
+					<!-- message row -->
+					<tr>
+						<td class="redips-mark blank"></td>
+						<td class="redips-mark blank"></td>
+						<td id="message" colspan="5" class="redips-mark dark2">Set css code respectively.</td>
+					</tr>
+				</table>
+			</div>
+		<button onclick="css1Submit()" class="btn btn-primary btn-lg">Submit</button>
+		</div> <!-- col -->
+	</div> <!-- row -->
+</div> <!-- container -->
+
