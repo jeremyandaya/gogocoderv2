@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'welcome' => 'welcome#welcome'
   get 'html/lesson1' => 'html#lesson1'
   get 'css/lesson1' => 'css#lesson1'
+  get 'javascript/lesson1' => 'javascript#lesson1'
 
 
 

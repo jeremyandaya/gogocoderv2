@@ -1,0 +1,134 @@
+
+
+/* make drag container visible */
+#js-drag {
+	width: 600px;
+	padding: 10px;
+	margin: 0px auto;
+}
+
+/* set border-collapse */
+div#js-drag table {
+/* 	border-collapse: collapse; */
+	border-collapse: separate;
+	border-spacing: 0px;
+	width: 580px;
+}
+	/* define margin below first table */
+	.tbl1 {
+		margin-bottom: 17px;
+	}
+
+/* set table row height */
+div#js-drag table tr {
+	height: 40px;
+}
+
+/*
+	http://stackoverflow.com/questions/4096390/table-border-color-in-css-with-border-collapse
+	
+	if collapsing borders have the same style and width, but differ in color,
+	then from most to least preferred: cell, row, row group, column, column group, table.
+	
+	if ... come from same type of element, such as two rows... then color is taken from
+	borders that are the topmost and the leftmost.
+	
+	wider border wins over narrower ones / double wins over solid, then dashed, dotted, ridge, outset, groove, inset
+*/
+div#js-drag td {
+	border: 2px groove white;
+}
+
+/* table titles */
+div#js-drag th {
+	font-size: 14pt;
+}
+
+/* drag object (DIV inside table cell) */
+.js-drag {
+	margin: auto;
+	margin-bottom: 1px;
+	margin-top: 1px;
+	text-align: center;
+	font-size: 10pt;
+	width: 70px;
+	height: 20px;
+	line-height: 20px;
+	border-width: 2px;
+	border-style: solid;
+	background-color: white;
+	/* round corners */
+	border-radius: 4px; /* Opera, Chrome */
+	-moz-border-radius: 4px; /* FF */
+}
+
+/* blue DIV elements */
+.blue {
+	border-color: SteelBlue;
+}
+
+/* orange DIV elements */
+.pink {
+	border-color: #FF8A58;
+}
+
+/* DIV row handlers (blue left column) */
+.js-row {
+	width: 20px;
+	margin: 2px;
+	border-color: SteelBlue;
+	background-color: SteelBlue;
+	/* round corners */
+	border-radius: 14px; /* Opera, Chrome */
+	-moz-border-radius: 14px; /* FF */
+}
+
+/* row handler TD background color */
+.js-rowhandler {
+	background-color: #76ACDA;
+}
+
+/* marked cells (forbidden access for header and message line) */
+.redips-mark {
+	color: white;
+	background-color: #aaa;
+	text-align: center;
+}
+
+/* row dark */
+.rd {
+	background-color: #ddd;
+}
+
+/* row light */
+.rl {
+	background-color: #eee;
+}
+
+/* cell dark */
+.cdark {
+	background-color: #C6C8CB;
+}
+
+#sortable1, #sortable2, #sortable3, #sortable4, #sortable5 {
+    border: 1px solid #eee;
+    width: 142px;
+    min-height: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 0 0 0;
+    float: left;
+    margin-right: 10px;
+  }
+  #sortable1 li, #sortable2 li, #sortable3 li, #sortable4 li, #sortable5 li {
+    margin: 0 5px 5px 5px;
+    padding: 5px;
+    font-size: 1.2em;
+    width: 120px;
+  }
+
+
+
+  #image-pop {
+  	display: none;
+  }
