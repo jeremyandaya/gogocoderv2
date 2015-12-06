@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :coders
   root 'welcome#index'
   get 'welcome/index'
 
