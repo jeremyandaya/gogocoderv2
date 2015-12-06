@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
 
   devise_for :coders
-  root 'welcome#index'
   get 'welcome/index'
-
   resources :codes
+
+  authenticated :coder do
+    root 'codes#index', as: "authenticated_root"
+  end
+
+  root 'welcome#index'
 
   get 'welcome' => 'welcome#welcome'
   get 'html/lesson1' => 'html#lesson1'
