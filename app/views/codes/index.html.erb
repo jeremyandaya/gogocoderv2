@@ -1,0 +1,4 @@
+<% @codes.each do |code| %>
+	<h2><%= link_to code.title, code %></h2>
+	<p><%= time_ago_in_words(code.created_at) %></p>
+<% end %>
