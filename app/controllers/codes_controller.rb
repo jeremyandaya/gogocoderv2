@@ -8,11 +8,11 @@ class CodesController < ApplicationController
 	end
 
 	def new
-		@code = Code.new
+		@code = current_coder.codes.build
 	end
 
 	def create
-		@code = Code.new(code_params)
+		@code = current_coder.codes.build(code_params)
 
 		if @code.save
 			redirect_to @code
