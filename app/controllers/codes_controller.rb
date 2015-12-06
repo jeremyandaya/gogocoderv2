@@ -1,17 +1,20 @@
 class CodesController < ApplicationController
 	before_action :find_code, only: [:show, :edit, :update, :destroy]
 	def index
-		@codes = Code.all.order("created_at DESC")
+		# @codes = Code.all.order("created_at DESC")
+		@codes = Code.where(coder_id: current_coder)
 	end
 
 	def show
 	end
 
 	def new
+		# @code = Code.new
 		@code = current_coder.codes.build
 	end
 
 	def create
+		# @code = Code.new(code_params)
 		@code = current_coder.codes.build(code_params)
 
 		if @code.save
