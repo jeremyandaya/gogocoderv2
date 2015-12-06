@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<form class="form-horizontal">
+			<!-- <form class="form-horizontal">
 			  <fieldset>
 			    <legend>Sign In</legend>
 			    <div class="form-group">
@@ -22,17 +22,24 @@
 			    <div class="form-group">
 			      <div class="col-lg-10 col-lg-offset-2">
 			        <button type="reset" class="btn btn-default">Create an account</button>
-			        <%= link_to "Submit", welcome_path, class: "btn btn-primary" %>
+			        <%#= link_to "Submit", welcome_path, class: "btn btn-primary" %>
 			      </div>
 			    </div>
 			  </fieldset>
-			</form>
+			</form> -->
 		</div>
 	</div>
 
 	<div class="row">
 		<div class="col-md-12">
-			<h1>This is the welcome placeholder</h1>
+			<div class="jumbotron" style="text-align:center;">
+				<h1>Go Go Coder</h1>
+				<p>Your online code book.<br>Never forget your code again.</p>
+				<p>
+					<%= link_to "Sign Up", new_coder_registration_path, class: "btn btn-primary btn-lg" %>
+					<!-- <a class="btn btn-primary btn-lg">Learn more</a> -->
+				</p>
+			</div>
 		</div>
 	</div>
 

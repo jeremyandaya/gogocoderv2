@@ -1,6 +1,6 @@
 <% @codes.each do |code| %>
 	<h2><%= link_to code.title, code %></h2>
-	<p><%= time_ago_in_words(code.created_at) %></p>
+	<p>Created <%= time_ago_in_words(code.created_at) %> ago</p>
 <% end %>
 
 <%= link_to "New Code", new_code_path %>

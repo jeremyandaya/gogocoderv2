@@ -2,7 +2,7 @@ class CodesController < ApplicationController
 	before_action :find_code, only: [:show, :edit, :update, :destroy]
 	def index
 		# @codes = Code.all.order("created_at DESC")
-		@codes = Code.where(coder_id: current_coder)
+		@codes = Code.where(coder_id: current_coder).order("created_at DESC")
 	end
 
 	def show

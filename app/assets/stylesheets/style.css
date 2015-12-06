@@ -3,6 +3,11 @@ body {
 	margin: 0px; /* for IE6 / IE7 */
 }
 
+#footer {
+	text-align: center;
+	background-color: #4e5d6c;
+}
+
 #container-body {
 	text-align: center;
 }
