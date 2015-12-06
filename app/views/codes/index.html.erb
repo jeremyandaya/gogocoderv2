@@ -1,6 +1,12 @@
-<% @codes.each do |code| %>
-	<h2><%= link_to code.title, code %></h2>
-	<p>Created <%= time_ago_in_words(code.created_at) %> ago</p>
+
+<% unless @codes.blank? %>
+	<% @codes.each do |code| %>
+		<h2><%= link_to code.title, code %></h2>
+		<p>Created <%= time_ago_in_words(code.created_at) %> ago</p>
+	<% end %>
+<% else %>
+	<h2>Add Code</h2>
+	<p>It appears you haven't created any codes yet... Why don't you create one now?</p>
+	<%= link_to "New Code", new_code_path, class: "btn btn-primary btn-lg" %>
 <% end %>
 
-<%= link_to "New Code", new_code_path %>

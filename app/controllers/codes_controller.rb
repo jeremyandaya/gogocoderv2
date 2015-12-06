@@ -1,5 +1,6 @@
 class CodesController < ApplicationController
 	before_action :find_code, only: [:show, :edit, :update, :destroy]
+	before_action :authenticate_coder!, only: [:show, :edit, :update, :destroy]
 	def index
 		# @codes = Code.all.order("created_at DESC")
 		@codes = Code.where(coder_id: current_coder).order("created_at DESC")
@@ -10,7 +11,11 @@ class CodesController < ApplicationController
 
 	def new
 		# @code = Code.new
-		@code = current_coder.codes.build
+		if coder_signed_in?
+			@code = current_coder.codes.build
+		else
+			redirect_to new_coder_registration_path
+		end
 	end
 
 	def create
