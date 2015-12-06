@@ -2,3 +2,5 @@
 	<h2><%= link_to code.title, code %></h2>
 	<p><%= time_ago_in_words(code.created_at) %></p>
 <% end %>
+
+<%= link_to "New Code", new_code_path %>

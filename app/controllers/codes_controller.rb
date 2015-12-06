@@ -25,9 +25,16 @@ class CodesController < ApplicationController
 	end
 
 	def update
+		if @code.update(code_params)
+			redirect_to @code
+		else
+			render 'edit'
+		end
 	end
 
 	def destroy
+		@code.destroy
+		redirect_to codes_path
 	end
 
 	private

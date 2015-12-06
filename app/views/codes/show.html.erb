@@ -2,3 +2,6 @@
 <p><%= @code.content %></p>
 
 <%= link_to "All Codes", codes_path %>
+
+<%= link_to "Edit", edit_code_path(@code) %>
+<%= link_to "Delete", code_path(@code), method: :delete, data: { confirm: 'Are you sure?' } %>
