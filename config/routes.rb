@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
-  root to: 'welcome#index'
+  root 'welcome#index'
+  get 'welcome/index'
+
+  resources :codes
 
   get 'welcome' => 'welcome#welcome'
   get 'html/lesson1' => 'html#lesson1'
