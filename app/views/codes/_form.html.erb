@@ -3,8 +3,9 @@
 		<div class="col-md-12">
 			<%= simple_form_for @code do |f| %>
 				<%= f.input :title %>
-				<%= f.input :content, class: "code-field" %>
-				<%= f.button :submit %>
+				<%= f.input :content, class: "code_content" %>
+				<%= f.button :submit, class: "btn btn-success btn-md" %>&nbsp;&nbsp;&nbsp;
+				<%= link_to "Cancel", codes_path, class: "btn btn-danger btn-md" %>
 			<% end %>
 		</div>
 	</div>

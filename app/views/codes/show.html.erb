@@ -3,12 +3,12 @@
 		<div class="col-md-12">
 			<div id="code_show">
 				<h1><%= @code.title %></h1>
-				<p><%= simple_format(@code.content, {}, :sanitize => true) %></p>
+				<p><%= simple_format(@code.content) %></p>
+				<!-- <p><%= @code.content %></p> -->
 
-				<%= link_to "All Codes", codes_path %>
-
-				<%= link_to "Edit", edit_code_path(@code) %>
-				<%= link_to "Delete", code_path(@code), method: :delete, data: { confirm: 'Are you sure?' } %>
+				<%= link_to "All Codes", codes_path, class: "btn btn-success btn-md" %>
+				<%= link_to "Show or Edit Code", edit_code_path(@code), class: "btn btn-primary btn-md" %>
+				<%= link_to "Delete Code", code_path(@code), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-md" %>
 			</div>
 		</div>
 	</div>
