@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container-fluid">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -57,10 +57,12 @@
 		        </li> -->
 
 		        <% if coder_signed_in? %>
-		        	<%= link_to "New Code", new_code_path %>
-		        	<%= link_to "Sign Out", destroy_coder_session_path, method: :delete %>
+		        	<li><%= link_to "#{@coder.email}'s Codes", codes_path %></li>
+		        	<li><%= link_to "New Code", new_code_path %></li>
+		        	<li><%= link_to "Edit Coder", edit_coder_registration_path %></li>
+		        	<li><%= link_to "Sign Out", destroy_coder_session_path, method: :delete %></li>
 		        <% else %>
-		        	<%= link_to "Log In", new_coder_session_path %>
+		        	<li><%= link_to "Log In", new_coder_session_path %></li>
 		        <% end %>
 
 

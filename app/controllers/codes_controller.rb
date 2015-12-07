@@ -1,6 +1,9 @@
 class CodesController < ApplicationController
+
 	before_action :find_code, only: [:show, :edit, :update, :destroy]
 	before_action :authenticate_coder!, only: [:show, :edit, :update, :destroy]
+	before_action :add_coder, only: [:edit, :index, :new, :show]
+
 	def index
 		# @codes = Code.all.order("created_at DESC")
 		@codes = Code.where(coder_id: current_coder).order("created_at DESC")
@@ -54,4 +57,14 @@ class CodesController < ApplicationController
 		def code_params
 			params.require(:code).permit(:title, :content)
 		end
+
+		def add_coder
+			@coder = Coder.find(current_coder)
+		end
 end
+
+
+
+
+
+

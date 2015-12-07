@@ -1,7 +1,15 @@
-<h1><%= @code.title %></h1>
-<p><%= @code.content %></p>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div id="code_show">
+				<h1><%= @code.title %></h1>
+				<p><%= simple_format(@code.content, {}, :sanitize => true) %></p>
 
-<%= link_to "All Codes", codes_path %>
+				<%= link_to "All Codes", codes_path %>
 
-<%= link_to "Edit", edit_code_path(@code) %>
-<%= link_to "Delete", code_path(@code), method: :delete, data: { confirm: 'Are you sure?' } %>
+				<%= link_to "Edit", edit_code_path(@code) %>
+				<%= link_to "Delete", code_path(@code), method: :delete, data: { confirm: 'Are you sure?' } %>
+			</div>
+		</div>
+	</div>
+</div>

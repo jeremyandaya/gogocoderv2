@@ -1,5 +1,5 @@
 body {
-	font-family: Courier;
+	/*font-family: Courier;*/
 	margin: 0px; /* for IE6 / IE7 */
 }
 
@@ -9,8 +9,47 @@ body {
 	margin-top: 50px;
 }
 
+#code_content {
+	width: 500px;
+	height: 200px;
+}
+
 #container-body {
 	text-align: center;
+}
+
+#wrapper_center {
+	width: 75%;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+#codes {
+	background: #4e5d6c;
+    width: 30%;
+    min-height: 135px;
+    margin: 10px 1%;
+    padding: 0px 30px;
+    float: left;
+    border-radius: 0.4em;
+    position: relative;    
+}
+
+#codes h2 {
+	font-size: 22px;
+}
+
+#codes p {
+	font-size: 12px;
 }
 
 #draggable, #draggable2 { 
