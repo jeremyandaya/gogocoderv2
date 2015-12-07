@@ -22,6 +22,14 @@ body {
 	text-align: center;
 }
 
+.row-forms {
+ 	text-align: right;
+ }
+
+ .hint {
+ 	color: #df691a;
+ }
+
 #wrapper_center {
 	width: 75%;
 	margin: 0 auto;

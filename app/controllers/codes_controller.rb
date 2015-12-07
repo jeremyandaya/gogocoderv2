@@ -61,6 +61,7 @@ class CodesController < ApplicationController
 		def add_coder
 			@coder = Coder.find(current_coder)
 		end
+
 end
 
 

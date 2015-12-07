@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   devise_for :coders
+  # devise_for :coders, :controllers => { registrations: 'registrations' }
   get 'welcome/index'
   resources :codes
 
