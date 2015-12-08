@@ -2,6 +2,14 @@
 	<div class="row">
 		<div class="col-md-12">
 			<% unless @codes.blank? %>
+				<div style="text-align: center;">
+					<% Category.all.each do |category| %>
+	  					<%= link_to category.name, codes_path(category: category.name) %>&nbsp;&nbsp;&nbsp;
+	  				<% end %>
+  				</div>
+
+  				<br>
+
 				<% @codes.each do |code| %>
 					<div id="codes">
 						<h2><%= link_to code.title, code %></h2>

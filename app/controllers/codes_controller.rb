@@ -6,7 +6,17 @@ class CodesController < ApplicationController
 
 	def index
 		# @codes = Code.all.order("created_at DESC")
-		@codes = Code.where(coder_id: current_coder).order("created_at DESC")
+		# @codes = Code.where(coder_id: current_coder).order("created_at DESC")
+
+		# for categories
+		if params[:category].blank?
+			@codes = Code.where(coder_id: current_coder).order("created_at DESC")
+		else
+			@category_id = Category.find_by(name: params[:category]).id
+			@codes = Code.where(category_id: @category_id, coder_id: current_coder).order("created_at DESC")
+		end
+
+
 	end
 
 	def show
@@ -55,7 +65,7 @@ class CodesController < ApplicationController
 		end
 
 		def code_params
-			params.require(:code).permit(:title, :content)
+			params.require(:code).permit(:title, :content, :category_id)
 		end
 
 		def add_coder
