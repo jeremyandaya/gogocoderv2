@@ -18,6 +18,12 @@ body {
 	width: 800px;
 }
 
+.coder1 {
+	/*margin-left: 30px;*/
+	margin-left: 10px;
+    width: 250px;
+}
+
 #container-body {
 	text-align: center;
 }
@@ -28,6 +34,14 @@ body {
 
  .hint {
  	color: #df691a;
+ }
+
+ .form-control#select {
+ 	width: 250px;
+ }
+
+ .jumbotron#jumbo-welcome {
+ 	margin-top: 30px;
  }
 
 #wrapper_center {

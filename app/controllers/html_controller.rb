@@ -5,6 +5,10 @@ class HtmlController < ApplicationController
 	private
 
 		def add_coder
-			@coder = Coder.find(current_coder);
+			if coder_signed_in?
+				@coder = Coder.find(current_coder)
+			else
+				redirect_to new_coder_session_path
+			end
 		end	
 end

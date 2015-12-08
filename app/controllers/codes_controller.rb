@@ -69,7 +69,11 @@ class CodesController < ApplicationController
 		end
 
 		def add_coder
-			@coder = Coder.find(current_coder)
+			if coder_signed_in?
+				@coder = Coder.find(current_coder)
+			else
+				redirect_to new_coder_registration_path
+			end
 		end
 
 end

@@ -5,11 +5,21 @@ Rails.application.routes.draw do
   get 'welcome/index'
   resources :codes
 
+  # default root start
+  # authenticated :coder do
+  #   root 'codes#index', as: "authenticated_root"
+  # end
+
+  # root 'welcome#index'
+  # default root end
+
+  # new root start
   authenticated :coder do
-    root 'codes#index', as: "authenticated_root"
+    root 'welcome#welcome', as: "authenticated_root"
   end
 
   root 'welcome#index'
+  # new root end
 
   get 'welcome' => 'welcome#welcome'
   get 'html/lesson1' => 'html#lesson1'
