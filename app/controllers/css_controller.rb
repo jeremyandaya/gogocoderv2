@@ -1,6 +1,6 @@
 class CssController < ApplicationController
 
-	before_action :add_coder, only: [:lesson1]
+	before_action :add_coder, only: [:exercise1]
 
 	private
 

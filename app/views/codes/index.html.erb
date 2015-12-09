@@ -4,7 +4,7 @@
 			<% unless @codes.blank? %>
 				<div style="text-align: center;">
 					<% Category.all.each do |category| %>
-	  					<%= link_to category.name, codes_path(category: category.name) %>&nbsp;&nbsp;&nbsp;
+	  					<%= link_to category.name, codes_path(category: category.name), class: "btn btn-info btn-sm" %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	  				<% end %>
   				</div>
 
