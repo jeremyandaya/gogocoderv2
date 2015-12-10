@@ -1,0 +1,271 @@
+.main * {
+  box-sizing: border-box;
+}
+
+#gameContainer1 {
+  width: 645px;
+  height: 35px;
+  padding: 5px;
+  margin-top: 5px;
+  border: solid 1px #DDD;
+  background-color: #EEE;
+  text-align: center;
+  float: left;
+  color: black;
+  font-style: italic;
+}
+ 
+#gameContainer2 {
+  width: 645px;
+  height: 35px;
+  padding: 5px;
+  margin-top: 5px;
+  border: solid 1px #DDD;
+  background-color: #EEE;
+  text-align: center;
+  float: left;
+  color: black;
+}
+
+#gameContainer3 {
+  width: 537px;
+  height: 35px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-left: 107px;
+  border: solid 1px #DDD;
+  background-color: #EEE;
+  text-align: center;
+  float: left;
+  color: black;
+}
+
+#gameContainer4 {
+  width: 431px;
+  height: 35px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-left: 213px;
+  border: solid 1px #DDD;
+  background-color: #EEE;
+  text-align: center;
+  float: left;
+  color: black;
+}
+
+#gameContainer5 {
+  width: 537px;
+  height: 35px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-left: 107px;
+  border: solid 1px #DDD;
+  background-color: #EEE;
+  text-align: center;
+  float: left;
+  color: black;
+}
+
+#gameContainer6 {
+  width: 537px;
+  height: 35px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-left: 107px;
+  border: solid 1px #DDD;
+  background-color: #EEE;
+  text-align: center;
+  float: left;
+  color: black;
+}
+
+#gameContainer7 {
+  width: 431px;
+  height: 35px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-left: 213px;
+  border: solid 1px #DDD;
+  background-color: #EEE;
+  text-align: center;
+  float: left;
+  color: black;
+}
+
+#gameContainer8 {
+  width: 537px;
+  height: 35px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-left: 107px;
+  border: solid 1px #DDD;
+  background-color: #EEE;
+  text-align: center;
+  float: left;
+  color: black;
+}
+
+#gameContainer9 {
+  width: 645px;
+  height: 35px;
+  padding: 5px;
+  margin-top: 5px;
+  border: solid 1px #DDD;
+  background-color: #EEE;
+  text-align: center;
+  float: left;
+  color: black;
+}
+
+#gameContainer10 {
+  width: 645px;
+  height: 35px;
+  padding: 5px;
+  margin-top: 5px;
+  border: solid 1px #DDD;
+  background-color: #EEE;
+  text-align: center;
+  float: left;
+  color: black;
+  font-style: italic;
+}
+
+#gameContainer11 {
+  width: 645px;
+  height: 35px;
+  padding: 5px;
+  margin-top: 5px;
+  border: solid 1px #DDD;
+  background-color: #EEE;
+  text-align: center;
+  float: left;
+  color: black;
+}
+
+#gameContainer12 {
+  width: 645px;
+  height: 35px;
+  padding: 5px;
+  margin-top: 5px;
+  border: solid 1px #DDD;
+  background-color: #EEE;
+  text-align: center;
+  float: left;
+  color: black;
+  font-style: italic;
+}
+
+#gameContainer13 {
+  width: 645px;
+  height: 35px;
+  padding: 5px;
+  margin-top: 5px;
+  border: solid 1px #DDD;
+  background-color: #EEE;
+  text-align: center;
+  float: left;
+  color: black;
+}
+
+.gameContainer1-red, 
+.gameContainer2-red,
+.gameContainer3-red,
+.gameContainer4-red,
+.gameContainer5-red,
+.gameContainer6-red,
+.gameContainer7-red,
+.gameContainer8-red,
+.gameContainer9-red,
+.gameContainer10-red,
+.gameContainer11-red,
+.gameContainer12-red,
+.gameContainer13-red   {
+  width: 115px;
+  height: 35px;
+  margin-top: 5px;
+  padding: 5px;
+  border: solid 1px #DDD;
+  background-color: red;
+  text-align: center;
+  float: left;
+  color: black;
+}
+
+.gameContainer1-green, 
+.gameContainer2-green,
+.gameContainer3-green,
+.gameContainer4-green,
+.gameContainer5-green,
+.gameContainer6-green,
+.gameContainer7-green,
+.gameContainer8-green,
+.gameContainer9-green,
+.gameContainer10-green,
+.gameContainer11-green,
+.gameContainer12-green,
+.gameContainer13-green  {
+  width: 115px;
+  height: 35px;
+  margin-top: 5px;  
+  padding: 5px;
+  border: solid 1px #DDD;
+  background-color: green;
+  text-align: center;
+  float: left;
+  color: black;
+}
+
+
+.piece {
+  width: 100px;
+  height: 24px;
+  margin-right: 6px;
+  float: left;
+}
+
+.piece:last-of-type {
+  margin-right: 0;
+}
+
+.blank {
+  border: 1px solid black;
+}
+
+.white {
+  border: 1px solid black;
+}
+
+.red {
+  background-color: red;
+  color: red;
+}
+
+.orange {
+  background-color: orange;
+  color: orange;  
+}
+
+.yellow {
+  background-color: yellow;
+  color: yellow;  
+}
+
+.green {
+  background-color: green;
+  color: green;  
+}
+
+.blue {
+  background-color: blue;
+  color: blue;  
+}
+
+.indigo {
+  background-color: indigo;
+  color: indigo;  
+}
+
+.violet {
+  background-color: violet;
+  color: violet;  
+}

@@ -25,6 +25,7 @@ Rails.application.routes.draw do
   get 'html/exercise1' => 'html#exercise1'
   get 'css/exercise1' => 'css#exercise1'
   get 'javascript/exercise1' => 'javascript#exercise1'
+  get 'ruby/exercise1' => 'ruby#exercise1'
 
 
 

@@ -3,7 +3,7 @@ var drop1, drop2, drop3, drop4, drop5, drop6, drop7, drop8, drop9, drop10, drop1
 $(document).ready(function() {
 
     // $("#doctype-drag, #html2-drag, #head1-drag").draggable({ containment: 'document', snap: "#doctype-drop, #head1-drop, #html2-drop" });
-    $("#doctype-drag, #html1-drag, #html2-drag, #head1-drag, #head2-drag, #title1-drag, #title2-drag, #title-drag, #body1-drag, #body2-drag, #div1-drag, #div2-drag, #content-drag").draggable({ containment: 'document' });
+    $("#doctype-drag, #html1-drag, #html2-drag, #head1-drag, #head2-drag, #title1-drag, #title2-drag, #title-drag, #body1-drag, #body2-drag, #div1-drag, #div2-drag, #content-drag").draggable({ containment: 'document', snap: "#doctype-drop, #html1-drop, #html2-drop, #head1-drop, #head2-drop, #title1-drop, #title2-drop, #title-drop, #body1-drop, #body2-drop, #div1-drop, #div2-drop, #content-drop", snapMode: "inner", cursor: "pointer" });
 
     $("#doctype-drop").droppable({ hoverClass: 'border', tolerance: 'fit', accept: '#doctype-drag',
         out: function() {
