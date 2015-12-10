@@ -3457,6 +3457,7 @@
  	font-size: 13px;
  	line-height: 1.5;
  	border-radius: 0.4em;
+ 	width: 120px;
  }
  .btn-xs,
  .btn-group-xs > .btn {

@@ -4,7 +4,7 @@
 			<% unless @codes.blank? %>
 				<div style="text-align: center;">
 					<% Category.all.each do |category| %>
-	  					<%= link_to category.name, codes_path(category: category.name), class: "btn btn-info btn-sm" %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  					<%= link_to category.name, codes_path(category: category.name), class: "btn btn-primary btn-sm" %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	  				<% end %>
   				</div>
 
@@ -13,7 +13,11 @@
 				<% @codes.each do |code| %>
 					<div id="codes">
 						<h2><%= link_to code.title, code %></h2>
-						<p>Created <%= time_ago_in_words(code.created_at) %> ago</p>
+						<p>
+							<%= Category.find(code.category_id).name %><br>
+							Updated: <%= time_ago_in_words(code.updated_at) %> ago<br>
+							Created: <%= time_ago_in_words(code.created_at) %> ago
+						</p>
 					</div>
 				<% end %>
 			<% else %>

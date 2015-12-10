@@ -16,7 +16,6 @@ class CodesController < ApplicationController
 			@codes = Code.where(category_id: @category_id, coder_id: current_coder).order("created_at DESC")
 		end
 
-
 	end
 
 	def show

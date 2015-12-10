@@ -61,8 +61,8 @@ body {
 
 #codes {
 	background: #4e5d6c;
-    width: 30%;
-    min-height: 135px;
+    width: 31%;
+    min-height: 175px;
     margin: 10px 1%;
     padding: 0px 30px;
     float: left;
@@ -75,7 +75,7 @@ body {
 }
 
 #codes p {
-	font-size: 12px;
+	font-size: 14px;
 }
 
 #draggable, #draggable2 { 
