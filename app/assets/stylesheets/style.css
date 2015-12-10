@@ -232,7 +232,33 @@ div#drag td {
 	color: black;
 }
 
+.square {
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    text-align: center;
+    float: left;
+    background-color: lightblue;
+    cursor: pointer;
+    font-weight: bold;
+    color: navy;
+}
 
+.squaredotted {
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px dotted gray;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    text-align: center;
+    float: left;
+    color: gray;
+    background-color: lightgray;
+}
 
 
 

@@ -127,14 +127,21 @@ $(document).ready(function() {
 function myFunction() {
     if (drop1 == true && drop2 == true && drop3 == true && drop4 == true && drop5 == true && drop6 == true && drop7 == true && drop8 == true && drop9 == true && drop10 == true && drop11 == true && drop12 == true && drop13 == true) {
         console.log('success');
-        document.getElementById("message").innerHTML = "SUCCESS!";
+        //document.getElementById("message").innerHTML = "SUCCESS!";
         $('#myModal').modal('show');
     } else {
         console.log('fail');
-        document.getElementById("message").innerHTML = "FAILED!";
+        //document.getElementById("message").innerHTML = "FAILED!";
         $('#myModal2').modal('show');
     }  
 };
+
+$(function () {
+        $(".square").draggable({
+                snap: ".squaredotted",
+                snapMode: "inner"
+        });
+});
 
 
 
