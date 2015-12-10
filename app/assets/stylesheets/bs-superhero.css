@@ -5010,6 +5010,7 @@
  	.jumbotron h1,
  	.jumbotron .h1 {
  		font-size: 68px;
+ 		text-indent: -10px;
  	}
  }
  .thumbnail {

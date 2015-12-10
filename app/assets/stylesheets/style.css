@@ -260,5 +260,18 @@ div#drag td {
     background-color: lightgray;
 }
 
+.squaredotted-blank {
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px dotted gray;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    text-align: center;
+    float: left;
+    color: gray;
+    background-color: #2b3e50;
+}
+
 
 
