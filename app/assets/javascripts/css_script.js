@@ -3,7 +3,7 @@ var cssdrop1, cssdrop2, cssdrop3, cssdrop4, cssdrop5 = false;
 $(document).ready(function() {
 
     // $("#doctype-drag, #html2-drag, #head1-drag").draggable({ containment: 'document', snap: "#doctype-drop, #head1-drop, #html2-drop" });
-    $("#lightblue-drag, #timesnew-drag, #inline-drag, #absolute-drag, #3px-drag").draggable({ containment: 'document' });
+    $("#lightblue-drag, #couriernew-drag, #inline-drag, #absolute-drag, #3px-drag").draggable({ containment: 'document', snap: "#lightblue-drop, #couriernew-drop, #inline-drop, #absolute-drop, #3px-drop", snapMode: "inner" });
 
     $("#lightblue-drop").droppable({ hoverClass: 'border', tolerance: 'intersect', accept: '#lightblue-drag',
         out: function() {
@@ -14,7 +14,7 @@ $(document).ready(function() {
         }
     });
 
-    $("#timesnew-drop").droppable({ hoverClass: 'border', tolerance: 'intersect', accept: '#timesnew-drag',
+    $("#couriernew-drop").droppable({ hoverClass: 'border', tolerance: 'intersect', accept: '#couriernew-drag',
         out: function() {
             cssdrop2 = false;
         },
@@ -57,11 +57,11 @@ $(document).ready(function() {
 function css1Submit() {
     if (cssdrop1 == true && cssdrop2 == true && cssdrop3 == true && cssdrop4 == true && cssdrop5 == true) {
         console.log('success');
-        document.getElementById("message").innerHTML = "SUCCESS!";
+        //document.getElementById("message").innerHTML = "SUCCESS!";
         $('#myModal').modal('show');
     } else {
         console.log('fail');
-        document.getElementById("message").innerHTML = "FAILED!";
+        //document.getElementById("message").innerHTML = "FAILED!";
         $('#myModal2').modal('show');
     }  
 };

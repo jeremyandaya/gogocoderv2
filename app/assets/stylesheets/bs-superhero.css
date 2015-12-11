@@ -4339,7 +4339,7 @@
  .navbar-nav > li > a {
  	padding-top: 10px;
  	padding-bottom: 10px;
- 	line-height: 21px;
+ 	line-height: 30px;
  }
  @media (max-width: 767px) {
  	.navbar-nav .open .dropdown-menu {
@@ -6816,7 +6816,7 @@
  	box-shadow: none;
  }
  .dropdown-menu > li > a {
- 	font-size: 12px;
+ 	font-size: 14px;
  }
  .btn-group.open .dropdown-toggle {
  	-webkit-box-shadow: none;
