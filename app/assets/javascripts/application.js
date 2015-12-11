@@ -12,6 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require script
-//= require turbolinks
+//= require html_script
+//= require css_script
+//= require js_script
+//= require ruby_script
+//  require turbolinks
 //= require_tree .
