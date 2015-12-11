@@ -235,7 +235,7 @@ div#drag td {
 }
 
 .square {
-    width: 140px;
+    width: 160px;
     height: 35px;
     line-height: 35px;
     border: 1px solid black;
@@ -245,12 +245,14 @@ div#drag td {
     float: left;
     background-color: lightblue;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 100;
     color: navy;
+    font-family: Courier;
+    font-size: 17px;
 }
 
 .squaredotted {
-    width: 140px;
+    width: 160px;
     height: 35px;
     line-height: 35px;
     border: 1px dotted gray;
@@ -263,7 +265,7 @@ div#drag td {
 }
 
 .squaredotted-blank {
-    width: 140px;
+    width: 160px;
     height: 35px;
     line-height: 35px;
     border: 1px dotted gray;

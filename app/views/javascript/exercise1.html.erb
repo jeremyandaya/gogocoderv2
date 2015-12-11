@@ -2,17 +2,17 @@
 	<div class="row">
 		<div class="col-md-12">
 			<h1>Javascript - Exercise 1</h1>
-			<p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus.</p>
+			<p class="lead">Rearrange the boxes of code to form a simple Javascipt if-else statement.</p>
 
 			<div class="modal" id="myModal">
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
-							<h4 class="modal-title">Success!</h4>
+							<h4 class="modal-title">Well done <%= "#{@coder.first_name}" %>!</h4>
 						</div>
 						<div class="modal-body">
-							<p>You are ready to go to the next level.</p>
+							<p>You are now ready to go to the next exercise.</p>
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-default" data-dismiss="modal">Check your code</button>
@@ -27,10 +27,10 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
-							<h4 class="modal-title">Fail!</h4>
+							<h4 class="modal-title">Almost there <%= "#{@coder.first_name}" %>!</h4>
 						</div>
 						<div class="modal-body">
-							<p>You are not ready to go to the next level.</p>
+							<p>Tip: Declaring a variable should be the first line in this exercise.</p>
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-danger" data-dismiss="modal">Try Again</button>
@@ -40,11 +40,27 @@
 			</div>
 
 			<ul id="sortable1" class="connectedSortable">
-				<li class="ui-state-highlight" id="a-drag">A</li>
-				<li class="ui-state-highlight" id="b-drag">B</li>
-				<li class="ui-state-highlight" id="c-drag">C</li>
-				<li class="ui-state-highlight" id="d-drag">D</li>
-				<li class="ui-state-highlight" id="e-drag">E</li>
+				<li class="ui-state-highlight" id="doc-math-drag">document.write("Math Book");</li>
+				
+				<li class="ui-state-highlight" id="if-history-drag">if (book == "history") {</li>
+				<li class="ui-state-highlight" id="close-bracket-drag">}</li>
+				
+				<li class="ui-state-highlight" id="doc-history-drag">document.write("History Book");</li>
+				<li class="ui-state-highlight" id="else-if-math-drag">else if (book == "math"){</li>
+				
+				
+				
+				
+				<li class="ui-state-highlight" id="close-bracket-drag">}</li>
+				<li class="ui-state-highlight" id="doc-unknown-drag">document.write("Unknown Book");</li>
+				
+				
+				<li class="ui-state-highlight" id="var-drag">var book = "math";</li>
+				<li class="ui-state-highlight" id="close-bracket-drag">}</li>
+				<li class="ui-state-highlight" id="else-drag">else {</li>
+				
+				
+				
 			</ul>
 
 			<!-- <ul id="sortable2" class="connectedSortable">
@@ -78,7 +94,7 @@
 
 		</div>
 	</div>
-	<div class="row">
+	<div class="row"><br><br>
 		<div class="col-md-12">
 			<button onclick="js1Submit()" class="btn btn-primary btn-lg">Submit</button>
 		</div>

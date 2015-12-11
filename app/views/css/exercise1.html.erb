@@ -9,14 +9,14 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
-							<h4 class="modal-title">Success!</h4>
+							<h4 class="modal-title">Well done <%= "#{@coder.first_name}" %>!</h4>
 						</div>
 						<div class="modal-body">
-							<p>You are ready to go to the next level.</p>
+							<p>You are now ready to go to the next exercise.</p>
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-default" data-dismiss="modal">Check your code</button>
-							<button type="button" class="btn btn-success">Next Level</button>
+							<%= link_to "Next Exercise", javascript_exercise1_path, class: "btn btn-success" %>
 						</div>
 					</div>
 				</div>
@@ -27,10 +27,10 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
-							<h4 class="modal-title">Fail!</h4>
+							<h4 class="modal-title">Almost there <%= "#{@coder.first_name}" %>!</h4>
 						</div>
 						<div class="modal-body">
-							<p>You are not ready to go to the next level.</p>
+							<p>Tip: Relax and focus. You can do this!</p>
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-danger" data-dismiss="modal">Try Again</button>
@@ -147,7 +147,7 @@
 			    <div style="clear:both"></div>
 			    <div class="square-css" id="couriernew-drag">"Courier New"</div>
 			    <div style="clear:both"></div>
-			    <div class="square-css" id="inline-drag">inline;</div>
+			    <div class="square-css" id="inline-drag">inline-block;</div>
 			    <div style="clear:both"></div>
 			    <div class="square-css" id="lightblue-drag">lightblue;</div>
 			    <div style="clear:both"></div>

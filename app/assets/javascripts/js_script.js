@@ -64,7 +64,7 @@ $(function() {
     
 
 function js1Submit() {
-    if (positions == "b-drag=1;a-drag=2;c-drag=3;e-drag=4;d-drag=5") {
+    if (positions == "var-drag=1;if-history-drag=2;doc-history-drag=3;close-bracket-drag=4;else-if-math-drag=5;doc-math-drag=6;close-bracket-drag=7;else-drag=8;doc-unknown-drag=9;close-bracket-drag=10") {
         console.log('success');
         // document.getElementById("js-message").innerHTML = "SUCCESS!";
         $('#myModal').modal('show');

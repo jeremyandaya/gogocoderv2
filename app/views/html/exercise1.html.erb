@@ -9,14 +9,14 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
-							<h4 class="modal-title">Success!</h4>
+							<h4 class="modal-title">Well done <%= "#{@coder.first_name}" %>!</h4>
 						</div>
 						<div class="modal-body">
-							<p>You are ready to go to the next level.</p>
+							<p>You are now ready to go to the next exercise.</p>
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-default" data-dismiss="modal">Check your code</button>
-							<button type="button" class="btn btn-success">Next Level</button>
+							<%= link_to "Next Exercise", css_exercise1_path, class: "btn btn-success" %>
 						</div>
 					</div>
 				</div>
@@ -27,10 +27,10 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
-							<h4 class="modal-title">Fail!</h4>
+							<h4 class="modal-title">Almost there <%= "#{@coder.first_name}" %>!</h4>
 						</div>
 						<div class="modal-body">
-							<p>You are not ready to go to the next level.</p>
+							<p>Tip: Don't forget to match your start and end tags.</p>
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-danger" data-dismiss="modal">Try Again</button>
@@ -38,128 +38,12 @@
 					</div>
 				</div>
 			</div>
-
-			<!-- <div id="redips-drag">
-				<table id="table1">
-					<colgroup>
-						<col width="100"/>
-						<col width="50"/>
-						<col width="100"/>
-						<col width="100"/>
-						<col width="100"/>
-						<col width="100"/>
-						<col width="100"/>
-					</colgroup>
-					<tr>
-						<td class="dark"><div id="head1-drag" class="redips-drag yellow">&#60;head&#62;</div></td>
-						<td class="redips-mark blank"></td>
-						<td class="green_cell" id="doctype-drop"></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-					</tr>
-					<tr>
-						<td class="dark"><div id="html2-drag" class="redips-drag yellow">&#60;/html&#62;</div></td>
-						<td class="redips-mark blank"></td>
-						<td class="yellow_cell" id="html1-drop"></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-					</tr>
-					<tr>
-						<td class="dark"><div id="head2-drag" class="redips-drag green">&#60;/head&#62;</div></td>
-						<td class="redips-mark blank"></td>
-						<td class="yellow_cell" id="head1-drop"></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-					</tr>
-					<tr>
-						<td class="dark"><div id="title1-drag" class="redips-drag green">&#60;title&#62;</div></td>
-						<td class="redips-mark blank"></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-						<td class="green_cell" id="title1-drop"></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-					</tr>
-					<tr>
-						<td class="dark"><div id="div2-drag" class="redips-drag green">&#60;/div&#62;</div></td>
-						<td class="redips-mark blank"></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-						<td class="yellow_cell" id="title-drop"></td>
-					</tr>
-					<tr>
-						<td class="dark"><div id="title2-drag" class="redips-drag green">&#60;/title&#62;</div></td>
-						<td class="redips-mark blank"></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-						<td class="green_cell" id="title2-drop"></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-					</tr>
-					<tr>
-						<td class="dark"><div id="html1-drag" class="redips-drag yellow">&#60;html&#62;</div></td>
-						<td class="redips-mark blank"></td>
-						<td class="green_cell" id="head2-drop"></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-					</tr>
-					<tr>
-						<td class="dark"><div id="div1-drag" class="redips-drag green">&#60;div&#62;</div></td>
-						<td class="redips-mark blank"></td>
-						<td class="orange_cell" id="body1-drop"></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-					</tr>
-					<tr>
-						<td class="dark"><div id="doctype-drag" class="redips-drag green">&#60;!DOCTYPE html&#62;</div></td>
-						<td class="redips-mark blank"></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-						<td class="green_cell" id="div1-drop"></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-					</tr>
-					<tr>
-						<td class="dark"><div id="body1-drag" class="redips-drag orange">&#60;body&#62;</div></td>
-						<td class="redips-mark blank"></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-						<td class="orange_cell" id="content-drop"></td>
-					</tr>
-					<tr>
-						<td class="dark"><div id="content-drag" class="redips-drag orange">Content</div></td>
-						<td class="redips-mark blank"></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-						<td class="green_cell" id="div2-drop"></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-					</tr>
-					<tr>
-						<td class="dark"><div id="body2-drag" class="redips-drag orange">&#60;/body&#62;</div></td>
-						<td class="redips-mark blank"></td>
-						<td class="orange_cell" id="body2-drop"></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-					</tr>
-					<tr>
-						<td class="dark"><div id="title-drag" class="redips-drag yellow">Title</div></td>
-						<td class="redips-mark blank"></td>
-						<td class="yellow_cell" id="html2-drop"></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-					</tr>
-					empty row
-					<tr>
-						<td colspan="7" class="redips-mark blank"></td>
-					</tr>
-					message row
-					<tr>
-						<td class="redips-mark blank"></td>
-						<td class="redips-mark blank"></td>
-						<td id="message" colspan="3" class="redips-mark dark2">Set html code respectively.</td>
-					</tr>
-				</table>
-			</div> -->
 		
 		</div> <!-- col -->
 	</div> <!-- row -->
 
 	<div class="row">
 		<div class="col-md-12">
-			<!-- HTML -->
 			<div style="float:left">
 			    <div class="square" id="head1-drag">&#60;head&#62;</div>
 			    <div style="clear:both"></div>
@@ -187,7 +71,7 @@
 			    <div style="clear:both"></div>
 			    <div class="square" id="title-drag">Title</div>
 			</div>
-			<div style="float:left;margin-left:50px;">
+			<div style="float:left;margin-left:20px;">
 			    <div class="squaredotted" id="doctype-drop"></div>
 			    <div class="squaredotted-blank"></div>
 			    <div class="squaredotted-blank"></div>

@@ -112,23 +112,39 @@ div#js-drag th {
 
 #sortable1, #sortable2, #sortable3, #sortable4, #sortable5 {
     border: 1px solid #eee;
-    width: 142px;
+    width: 850px;
     min-height: 20px;
     list-style-type: none;
     margin: 0;
     padding: 5px 0 0 0;
     float: left;
     margin-right: 10px;
+    text-align: left;
+    text-indent: 20px
   }
+
   #sortable1 li, #sortable2 li, #sortable3 li, #sortable4 li, #sortable5 li {
     margin: 0 5px 5px 5px;
     padding: 5px;
-    font-size: 1.2em;
-    width: 120px;
+    font-size: 19px;
+    width: 840px;
+    font-family: Courier;
+    cursor: pointer;
   }
-
-
 
   #image-pop {
   	display: none;
   }
+
+  #doc-history-drag, 
+  #doc-math-drag,
+  #doc-unknown-drag {
+  	text-indent: 60px;
+  }
+
+
+
+
+
+
+
