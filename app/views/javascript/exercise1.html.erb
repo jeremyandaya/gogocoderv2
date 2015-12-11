@@ -16,7 +16,7 @@
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-default" data-dismiss="modal">Check your code</button>
-							<button type="button" class="btn btn-success">Next Level</button>
+							<%= link_to "Next Exercise", ruby_exercise1_path, class: "btn btn-success" %>
 						</div>
 					</div>
 				</div>
@@ -41,26 +41,15 @@
 
 			<ul id="sortable1" class="connectedSortable">
 				<li class="ui-state-highlight" id="doc-math-drag">document.write("Math Book");</li>
-				
 				<li class="ui-state-highlight" id="if-history-drag">if (book == "history") {</li>
 				<li class="ui-state-highlight" id="close-bracket-drag">}</li>
-				
 				<li class="ui-state-highlight" id="doc-history-drag">document.write("History Book");</li>
 				<li class="ui-state-highlight" id="else-if-math-drag">else if (book == "math"){</li>
-				
-				
-				
-				
 				<li class="ui-state-highlight" id="close-bracket-drag">}</li>
 				<li class="ui-state-highlight" id="doc-unknown-drag">document.write("Unknown Book");</li>
-				
-				
 				<li class="ui-state-highlight" id="var-drag">var book = "math";</li>
 				<li class="ui-state-highlight" id="close-bracket-drag">}</li>
 				<li class="ui-state-highlight" id="else-drag">else {</li>
-				
-				
-				
 			</ul>
 
 			<!-- <ul id="sortable2" class="connectedSortable">

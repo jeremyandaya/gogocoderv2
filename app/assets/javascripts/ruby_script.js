@@ -1,107 +1,93 @@
+var answer1, answer2, answer3, answer4, answer5, answer6, answer7 = '';
+var answer1a = ['a','b'].join('');
+var answer2a = ['a','b','c','d','e'].join('');
+var answer3a = ['a','b','c','d'].join('');
+var answer4a = ['a','b'].join('');
+var answer5a = ['a','b','c','d'].join('');
+var answer6a = ['a','b','c','d','e'].join('');
+var answer7a = ['a','b'].join('');
+
+
 $(document).ready(function() {
-  // var answer = ['a','b','c','d'].join('');
-  var answer2 = ['a','b'].join('');
-  var answer3 = ['a','b','c','d','e'].join('');
-  var answer4 = ['a','b','c','d'].join('');
-  var answer6 = ['a','b'].join('');
-  var answer7 = ['a','b','c','d'].join('');
-  var answer11 = ['a','b','c','d','e'].join('');
-  var answer13 = ['a','b'].join('');
-  var finalcheck = false;
+  
+    function coordinates(event,ui) {
+        console.log(ui.position);
+    }
 
-   function coordinates(event,ui) {
-    console.log(ui.position);
-   }
+    $('#sortable-ruby-1').sortable({
+        axis : 'x',
+        stop : function (event, ui) {
+          window.answer1 = $(this).sortable("toArray").join('');
+          console.log(answer1);
+      },
+      sort : coordinates
+    });
 
-   // $('#gameContainer1').sortable({
-   //  axis : 'x',
-   //  stop : function (event, ui) {
-   //    if ($(this).sortable("toArray").join('') === answer) {
-   //      document.getElementById("gameContainer1-red").className = "gameContainer1-green";
-   //      $(this).sortable("disable");
-   //    }
-   //  },
-   //  sort : coordinates
-   // });
+    $('#sortable-ruby-2').sortable({
+        axis : 'x',
+        stop : function (event, ui) {
+          window.answer2 = $(this).sortable("toArray").join('');
+          console.log(answer2);
+      },
+      sort : coordinates
+    });
 
-   $('#gameContainer2').sortable({
-    axis : 'x',
-    stop : function (event, ui) {
-      if ($(this).sortable("toArray").join('') === answer2) {
-        document.getElementById("gameContainer2-red").className = "gameContainer2-green";
-        $(this).sortable("disable");
-      }
-    },
-    sort : coordinates
-   });
+    $('#sortable-ruby-3').sortable({
+        axis : 'x',
+        stop : function (event, ui) {
+          window.answer3 = $(this).sortable("toArray").join('');
+          console.log(answer3);
+      },
+      sort : coordinates
+    });
 
-   $('#gameContainer3').sortable({
-    axis : 'x',
-    stop : function (event, ui) {
-      if ($(this).sortable("toArray").join('') === answer3) {
-        document.getElementById("gameContainer3-red").className = "gameContainer3-green";
-        $(this).sortable("disable");
-      }
-    },
-    sort : coordinates
-   });
+    $('#sortable-ruby-4').sortable({
+        axis : 'x',
+        stop : function (event, ui) {
+          window.answer4 = $(this).sortable("toArray").join('');
+          console.log(answer4);
+      },
+      sort : coordinates
+    });
 
-   $('#gameContainer4').sortable({
-    axis : 'x',
-    stop : function (event, ui) {
-      if ($(this).sortable("toArray").join('') === answer4) {
-        document.getElementById("gameContainer4-red").className = "gameContainer4-green";
-        $(this).sortable("disable");
-      }
-    },
-    sort : coordinates
-   });
+    $('#sortable-ruby-5').sortable({
+        axis : 'x',
+        stop : function (event, ui) {
+          window.answer5 = $(this).sortable("toArray").join('');
+          console.log(answer5);
+      },
+      sort : coordinates
+    });
 
-   $('#gameContainer6').sortable({
-    axis : 'x',
-    stop : function (event, ui) {
-      if ($(this).sortable("toArray").join('') === answer6) {
-        document.getElementById("gameContainer6-red").className = "gameContainer6-green";
-        $(this).sortable("disable");
-      }
-    },
-    sort : coordinates
-   });
+    $('#sortable-ruby-6').sortable({
+        axis : 'x',
+        stop : function (event, ui) {
+          window.answer6 = $(this).sortable("toArray").join('');
+          console.log(answer6);
+      },
+      sort : coordinates
+    });
 
-   $('#gameContainer7').sortable({
-    axis : 'x',
-    stop : function (event, ui) {
-      if ($(this).sortable("toArray").join('') === answer7) {
-        document.getElementById("gameContainer7-red").className = "gameContainer7-green";
-        $(this).sortable("disable");
-      }
-    },
-    sort : coordinates
-   });
+    $('#sortable-ruby-7').sortable({
+        axis : 'x',
+        stop : function (event, ui) {
+          window.answer7 = $(this).sortable("toArray").join('');
+          console.log(answer7);
+      },
+      sort : coordinates
+    });
 
-   $('#gameContainer11').sortable({
-    axis : 'x',
-    stop : function (event, ui) {
-      if ($(this).sortable("toArray").join('') === answer11) {
-        document.getElementById("gameContainer11-red").className = "gameContainer11-green";
-        $(this).sortable("disable");
-      }
-    },
-    sort : coordinates
-   });
-
-   $('#gameContainer13').sortable({
-    axis : 'x',
-    stop : function (event, ui) {
-      if ($(this).sortable("toArray").join('') === answer13) {
-        document.getElementById("gameContainer13-red").className = "gameContainer13-green";
-        $(this).sortable("disable");
-      }
-    },
-    sort : coordinates
-   });
-   
 }); // end ready
+
+function ruby_submit() {
+    if (answer1 === answer1a && answer2 === answer2a && answer3 === answer3a && answer4 === answer4a && answer5 === answer5a && answer6 === answer6a && answer7 === answer7a) {
+        console.log('success');
+        $('#myModal').modal('show');
+    } else {
+        console.log('fail');
+        $('#myModal2').modal('show');
+    }  
+};
 
 
 
