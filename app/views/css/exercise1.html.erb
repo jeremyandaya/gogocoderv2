@@ -6,13 +6,13 @@
 
 			<div class="modal" id="myModal">
 				<div class="modal-dialog">
-					<div class="modal-content">
+					<div class="modal-content" id="welldone">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
 							<h4 class="modal-title">Well done <%= "#{@coder.first_name}" %>!</h4>
 						</div>
-						<div class="modal-body">
-							<p>You are now ready to go to the next exercise.</p>
+						<div class="modal-body" id="welldonetext">
+							<p>You are now ready to go to the next exercise!</p>
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-default" data-dismiss="modal">Check your code</button>
@@ -24,7 +24,7 @@
 
 			<div class="modal" id="myModal2">
 				<div class="modal-dialog">
-					<div class="modal-content">
+					<div class="modal-content" id="tryagain">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
 							<h4 class="modal-title">Almost there <%= "#{@coder.first_name}" %>!</h4>
@@ -38,108 +38,12 @@
 					</div>
 				</div>
 			</div>
-
-			<!-- <div id="css-drag">
-				<table id="table1">
-					<colgroup>
-						<col width="100"/>
-						<col width="50"/>
-						<col width="100"/>
-						<col width="100"/>
-						<col width="100"/>
-						<col width="100"/>
-						<col width="100"/>
-					</colgroup>
-					<tr>
-						<td class="dark"><div class="css-drag">body</div></td>
-						<td class="green_cell"><div class="css-drag">{</div></td>
-						<td class="dark redips-single" title="Single content cell"><div class="css-drag"></div></td>
-					</tr>
-					<tr>
-						<td class="dark"><div class="css-drag"></div></td>
-						<td class="yellow_cell"><div class="css-drag">background-color:</div></td>
-						<td id="lightblue-drop" class="dark redips-single" title="Single content cell"><div id="3px-drag" class="css-drag">3px solid #73AD21;</div></td>
-					</tr>
-					<tr>
-						<td class="dark"><div class="css-drag">}</div></td>
-						<td class="yellow_cell"><div class="css-drag"></div></td>
-						<td class="dark redips-single" title="Single content cell"><div  class="css-drag"></div></td>
-					</tr>
-					<tr>
-						<td class="dark"><div class="css-drag">p</div></td>
-						<td class="dark redips-single" title="Single content cell"><div  class="css-drag">{</div></td>
-						<td class="green_cell"><div class="css-drag"></div></td>
-					</tr>
-					<tr>
-						<td class="dark"><div id="title1-drag" class="css-drag"></div></td>
-						<td class="dark redips-single" title="Single content cell"><div  class="css-drag">font-family:</div></td>
-						<td class="green_cell" id="timesnew-drop"><div id="absolute-drag" class="css-drag">absolute;</div></td>
-					</tr>
-					<tr>
-						<td class="dark"><div class="css-drag">}</div></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-						<td class="green_cell"></td>
-						
-					</tr>
-					<tr>
-						<td class="dark"><div class="css-drag">li</div></td>
-						<td class="green_cell"><div class="css-drag">{</div></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-						
-					</tr>
-					<tr>
-						<td class="dark"><div class="css-drag"></div></td>
-						<td class="orange_cell"><div class="css-drag">display:</div></td>
-						<td class="dark redips-single" title="Single content cell" id="inline-drop"><div id="timesnew-drag" class="css-drag">"Times New Roman", Times, serif;</div></td>
-					</tr>
-					<tr>
-						<td class="dark"><div class="css-drag">}</div></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-						<td class="green_cell"></td>
-					</tr>
-					<tr>
-						<td class="dark"><div class="css-drag">.right</div></td>
-						<td class="dark redips-single" title="Single content cell"><div class="css-drag">{</div></td>
-						<td class="green_cell"><div class="css-drag"></div></td>
-					</tr>
-					<tr>
-						<td class="dark"><div class="css-drag"></div></td>
-						<td class="dark redips-single" title="Single content cell"><div  class="css-drag">position:</div></td>
-						<td class="green_cell" id="absolute-drop"><div id="inline-drag" class="css-drag">inline;</div></td>
-						
-					</tr>
-					<tr>
-						<td class="dark"><div class="css-drag"></div></td>
-						<td class="orange_cell" id="body2-drop"><div class="css-drag">border:</div></td>
-						<td class="dark redips-single" title="Single content cell" id="3px-drop"><div id="lightblue-drag" class="css-drag">lightblue;</div></td>
-						
-					</tr>
-					<tr>
-						<td class="dark"><div id="title-drag" class="css-drag">}</div></td>
-						<td class="yellow_cell" id="html2-drop"></td>
-						<td class="dark redips-single" title="Single content cell"></td>
-						
-					</tr>
-					empty row
-					<tr>
-						<td colspan="7" class="redips-mark blank"></td>
-					</tr>
-					message row
-					<tr>
-						<td class="redips-mark blank"></td>
-						<td class="redips-mark blank"></td>
-						<td id="message" colspan="5" class="redips-mark dark2">Set css code respectively.</td>
-					</tr>
-				</table>
-			</div> -->
-
-			<!-- <br><br>
-		<button onclick="css1Submit()" class="btn btn-primary btn-lg">Submit</button> -->
+			
 		</div> <!-- col -->
 	</div> <!-- row  -->
 	<div class="row">
 		<div class="col-md-12">
-			<!-- HTML -->
+			
 			<div style="float:left">
 			    <div class="square-css" id="3px-drag">3px solid #73AD21;</div>
 			    <div style="clear:both"></div>
@@ -174,7 +78,7 @@
 			    <div style="clear:both"></div>
 			    <div class="squaredotted-css-blank"></div>
 			    <div class="squaredotted-css">background-color:</div>
-			    <div class="squaredotted-css" id="lightblue-drop">6</div>
+			    <div class="squaredotted-css" id="lightblue-drop"></div>
 			    <div style="clear:both"></div>
 			    <div class="squaredotted-css">}</div>
 			    <div class="squaredotted-css-blank"></div>
@@ -186,7 +90,7 @@
 			    <div style="clear:both"></div>
 			    <div class="squaredotted-css-blank"></div>
 			    <div class="squaredotted-css">font-family:</div>
-			    <div class="squaredotted-css" id="couriernew-drop">15</div>
+			    <div class="squaredotted-css" id="couriernew-drop"></div>
 			    <div style="clear:both"></div>
 			    <div class="squaredotted-css">}</div>
 			    <div class="squaredotted-css-blank"></div>
@@ -198,7 +102,7 @@
 			    <div style="clear:both"></div>
 			    <div class="squaredotted-css-blank"></div>
 			    <div class="squaredotted-css">display:</div>
-			    <div class="squaredotted-css" id="inline-drop">24</div>
+			    <div class="squaredotted-css" id="inline-drop"></div>
 			    <div style="clear:both"></div>
 			    <div class="squaredotted-css">}</div>
 			    <div class="squaredotted-css-blank"></div>
@@ -210,11 +114,11 @@
 			    <div style="clear:both"></div>
 			    <div class="squaredotted-css-blank"></div>
 			    <div class="squaredotted-css">position:</div>
-			    <div class="squaredotted-css" id="absolute-drop">33</div>
+			    <div class="squaredotted-css" id="absolute-drop"></div>
 			    <div style="clear:both"></div>
 			    <div class="squaredotted-css-blank"></div>
 			    <div class="squaredotted-css">border:</div>
-			    <div class="squaredotted-css" id="3px-drop">36</div>
+			    <div class="squaredotted-css" id="3px-drop"></div>
 			    <div style="clear:both"></div>
 			    <div class="squaredotted-css">}</div>
 			    <div class="squaredotted-css-blank"></div>

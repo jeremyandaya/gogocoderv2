@@ -63,6 +63,10 @@ body {
     margin: 15px 0px 0px 120px;
 }
 
+.modal-body#welldonetext p {
+    margin: 15px 0px 0px 245px;
+}
+
 #code_content {
 	width: 800px;
 	height: 400px;
