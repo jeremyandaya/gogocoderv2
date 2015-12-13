@@ -11,8 +11,9 @@ body {
     background-image: url(coder5.png);
     background-repeat: no-repeat;
     background-position: 6px 6px;
-    width: 520px;
+    width: 600px;
     height: 411px;
+    margin-left: -100px;
 }
 
 .col-md-4#signup {
@@ -23,20 +24,22 @@ body {
     background-image: url(coder3.png);
     background-repeat: no-repeat;
     background-position: 6px 6px;
-    width: 599px;
-    height: 415px;
+    width: 677px;
+    height: 439px;
+    margin-left: -100px;
 }
 
 .col-md-4#editcoder {
     background-color: #4e5d6c;
     border-radius: 0.4em;
     margin-top: 40px;
+    margin-left: -100px;
     padding: 0px 34px 50px 0px;
     background-image: url(coder6.png);
     background-repeat: no-repeat;
     background-position: 15px 15px;
-    width: 633px;
-    height: 430px;
+    width: 672px;
+    height: 470px;
 }
 
 #footer {
@@ -45,6 +48,36 @@ body {
 	margin-top: 50px;
 	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 12px;
+}
+
+.textareashow {
+    border-radius: 0.4em;
+    font-family: Courier;
+    color: white;
+    background-color: #2b3e50;
+    padding: 15px 15px 15px 15px;
+    width: 820px;
+    font-size: 17px;
+    height: 500px;
+}
+
+.textareaedit {
+    border-radius: 0.4em;
+    font-family: Courier;
+    color: white;
+    background-color: #2b3e50;
+    padding: 15px 15px 15px 15px;
+    width: 820px;
+    font-size: 17px;
+}
+
+textarea {
+    color: #2b3e50;
+    border-radius: 0.4em;
+    height: 40px;
+    margin-bottom: 5px;
+    width: 250px;
+    text-indent: 10px;
 }
 
 .modal-content#tryagain {
@@ -67,13 +100,21 @@ body {
     margin: 15px 0px 0px 245px;
 }
 
+#code_title {
+    width: 800px;
+    height: 40px;
+    border-radius: 0.4em;
+    text-indent: 7px;
+}
+
 #code_content {
 	width: 800px;
 	height: 400px;
-}
-
-#code_title {
-	width: 800px;
+    border-radius: 0.4em;
+    font-family: Courier;
+    color: black;
+    padding: 15px 15px 15px 15px;
+    font-size: 17px;
 }
 
 .coder1 {
@@ -305,9 +346,11 @@ div#drag td {
     background-color: lightblue;
     cursor: pointer;
     font-weight: 100;
-    color: navy;
+    color: black;
     font-family: Courier;
     font-size: 17px;
+    border-radius: 0.4em;
+
 }
 
 .squaredotted {
@@ -321,6 +364,7 @@ div#drag td {
     float: left;
     color: gray;
     background-color: lightgray;
+    border-radius: 0.4em;
 }
 
 .squaredotted-blank {
@@ -334,6 +378,7 @@ div#drag td {
     float: left;
     color: gray;
     background-color: #2b3e50;
+    border-radius: 0.4em;
 }
 
 .square-css {
@@ -351,7 +396,8 @@ div#drag td {
     font-family: Courier;
     font-weight: 100;
     font-size: 17px;
-    color: navy;
+    color: black;
+    border-radius: 0.4em;
 }
  
 .squaredotted-css {
@@ -369,6 +415,7 @@ div#drag td {
     font-family: Courier;
     font-weight: 100;
     font-size: 17px;
+    border-radius: 0.4em;
 }
 
 .squaredotted-css-blank {
@@ -384,5 +431,6 @@ div#drag td {
     color: black;
     font-family: Courier;
     font-size: 24px;
+    border-radius: 0.4em;
 }
 

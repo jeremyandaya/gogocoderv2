@@ -282,6 +282,7 @@
     margin-left: -97px;
     padding: 5px 0 0 0;
     text-align: left;
+    border-radius: 0.4em;
 }
 
 #sortable-ruby-2 {
@@ -292,6 +293,7 @@
     margin-left: 49px;
     padding: 5px 0 0 0;
     text-align: left;
+    border-radius: 0.4em;
 }
 
 #sortable-ruby-3 {
@@ -302,6 +304,7 @@
     margin-left: 196px;
     padding: 5px 0 0 0;
     text-align: left;
+    border-radius: 0.4em;
 }
 
 #sortable-ruby-4 {
@@ -312,6 +315,7 @@
     margin-left: 49px;
     padding: 5px 0 0 0;
     text-align: left;
+    border-radius: 0.4em;
 }
 
 #sortable-ruby-5 {
@@ -322,6 +326,7 @@
     margin-left: 196px;
     padding: 5px 0 0 0;
     text-align: left;
+    border-radius: 0.4em;
 }
 
 #sortable-ruby-6 {
@@ -332,6 +337,7 @@
     margin-left: -97px;
     padding: 5px 0 0 0;
     text-align: left;
+    border-radius: 0.4em;
 }
 
 #sortable-ruby-7 {
@@ -342,6 +348,7 @@
     margin-left: -97px;
     padding: 5px 0 0 0;
     text-align: left;
+    border-radius: 0.4em;
 }
 
 #sortable-ruby-comment-1 {
@@ -352,6 +359,7 @@
     margin-left: -97px;
     padding: 5px 0 0 0;
     text-align: left;
+    border-radius: 0.4em;
 }
 
 #sortable-ruby-comment-2 {
@@ -362,6 +370,7 @@
     margin-left: 49px;
     padding: 5px 0 0 0;
     text-align: left;
+    border-radius: 0.4em;
 }
 
 #sortable-ruby-comment-3 {
@@ -372,6 +381,7 @@
     margin-left: -97px;
     padding: 5px 0 0 0;
     text-align: left;
+    border-radius: 0.4em;
 }
 
 #sortable-ruby-1 li,
@@ -389,6 +399,7 @@
     font-family: Courier;
     cursor: pointer;
     display: inline-block;
+    border-radius: 0.4em;
 }
 
 #sortable-ruby-comment-1 li {
@@ -400,6 +411,7 @@
     font-family: Courier;
     cursor: pointer;
     display: inline-block;
+    border-radius: 0.4em;
 }
 
 #sortable-ruby-comment-2 li {
@@ -411,6 +423,7 @@
     font-family: Courier;
     cursor: pointer;
     display: inline-block;
+    border-radius: 0.4em;
 }
 
 #sortable-ruby-comment-3 li {
@@ -422,6 +435,7 @@
     font-family: Courier;
     cursor: pointer;
     display: inline-block;
+    border-radius: 0.4em;
 }
 
 .ruby-li {

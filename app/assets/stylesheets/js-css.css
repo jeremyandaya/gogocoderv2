@@ -120,7 +120,8 @@ div#js-drag th {
     float: left;
     margin-right: 10px;
     text-align: left;
-    text-indent: 20px
+    text-indent: 20px;
+    border-radius: 0.4em;
   }
 
   #sortable1 li, #sortable2 li, #sortable3 li, #sortable4 li, #sortable5 li {
@@ -130,6 +131,7 @@ div#js-drag th {
     width: 840px;
     font-family: Courier;
     cursor: pointer;
+    border-radius: 0.4em;
   }
 
   #image-pop {

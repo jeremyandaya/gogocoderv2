@@ -8,7 +8,7 @@
 				<h1><%= @code.title %></h1>
 				<!-- <p><%#= simple_format(@code.content) %></p> -->
 				<!-- textarea should be one line with ruby code to show properly -->
-				<textarea rows="20" cols="100" readonly><%= @code.content %></textarea>
+				<textarea rows="20" cols="100" readonly class="textareashow"><%= @code.content %></textarea>
 				<br><br>
 				
 				<%= link_to "Edit Code", edit_code_path(@code), class: "btn btn-primary btn-md" %>&nbsp;&nbsp;&nbsp;
