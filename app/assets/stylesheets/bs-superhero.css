@@ -5964,6 +5964,7 @@
  .modal-body {
  	position: relative;
  	padding: 20px;
+ 	height: 100px;
  }
  .modal-footer {
  	padding: 20px;

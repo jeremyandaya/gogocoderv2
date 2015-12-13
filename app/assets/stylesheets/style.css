@@ -3,12 +3,64 @@ body {
 	margin: 0px; /* for IE6 / IE7 */
 }
 
+.col-md-4#login {
+	background-color: #4e5d6c;
+    border-radius: 0.4em;
+    margin-top: 40px;
+    padding: 0px 34px 50px 0px;
+    background-image: url(coder5.png);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+    width: 520px;
+    height: 411px;
+}
+
+.col-md-4#signup {
+    background-color: #4e5d6c;
+    border-radius: 0.4em;
+    margin-top: 40px;
+    padding: 0px 34px 50px 0px;
+    background-image: url(coder3.png);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+    width: 599px;
+    height: 415px;
+}
+
+.col-md-4#editcoder {
+    background-color: #4e5d6c;
+    border-radius: 0.4em;
+    margin-top: 40px;
+    padding: 0px 34px 50px 0px;
+    background-image: url(coder6.png);
+    background-repeat: no-repeat;
+    background-position: 15px 15px;
+    width: 633px;
+    height: 430px;
+}
+
 #footer {
 	text-align: center;
 	background-color: #4e5d6c;
 	margin-top: 50px;
 	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 12px;
+}
+
+.modal-content#tryagain {
+	background-image: url(coder1.png);
+    background-repeat: no-repeat;
+    background-position: 0px 16px;
+}
+
+.modal-content#welldone {
+    background-image: url(coder4.png);
+    background-repeat: no-repeat;
+    background-position: -69px -45px;
+}
+
+.modal-body p {
+    margin: 15px 0px 0px 120px;
 }
 
 #code_content {
@@ -44,6 +96,9 @@ body {
 
  .jumbotron#jumbo-welcome {
  	margin-top: 30px;
+ 	background-image: url(coder2.png);
+    background-repeat: no-repeat;
+    background-position: 540px 0px;
  }
 
 #wrapper_center {

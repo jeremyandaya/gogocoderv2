@@ -1,13 +1,14 @@
 <div class="container-fluid">
 	<div class="row-forms">
-		<div class="col-md-4" style="border: 1px dashed yellow">
-			why
+		<div class="col-md-4">
+			
 		</div>
-		<div class="col-md-4" style="border: 1px dashed yellow">
+		<div class="col-md-4" id="signup">
 			<h2>Sign up</h2>
 			<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
 			  <%= f.error_notification %>
 			  <div class="form-inputs">
+			  	<br>
 			  	<%= f.input :first_name %>
 			  	<%= f.input :last_name %>
 			    <%= f.input :email, required: true, autofocus: true %>
@@ -20,11 +21,11 @@
 			    <%= f.button :submit, "Sign up", class: "btn btn-primary btn-md" %>
 			  </div>
 			<% end %>
-
+			<br>
 			<%= render "devise/shared/links" %>
 		</div>
-		<div class="col-md-4" style="border: 1px dashed yellow">
-			me
+		<div class="col-md-4">
+			
 		</div>
 	</div>
 </div>
