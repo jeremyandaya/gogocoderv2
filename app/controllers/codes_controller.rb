@@ -33,11 +33,11 @@ class CodesController < ApplicationController
 	def create
 		# @code = Code.new(code_params)
 		@code = current_coder.codes.build(code_params)
-
+		# byebug
 		if @code.save
 			redirect_to @code
 		else
-			render 'new'
+			render :new
 		end
 	end
 

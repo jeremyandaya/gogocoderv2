@@ -16,7 +16,7 @@
 						<h2><%= link_to code.title, code %></h2>
 						<p>
 							<%= Category.find(code.category_id).name %><br>
-							Updated: <%= time_ago_in_words(code.updated_at) %> ago<br>
+							Modified: <%= time_ago_in_words(code.updated_at) %> ago<br>
 							Created: <%= time_ago_in_words(code.created_at) %> ago
 						</p>
 					</div>

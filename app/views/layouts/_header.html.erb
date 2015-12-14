@@ -44,7 +44,7 @@
 			          </ul>
 			        </li>
 
-		        	<li><%= link_to "#{@coder.first_name}'s Codes", codes_path %></li>
+		        	<li><%= link_to "#{current_coder.first_name}'s Codes", codes_path %></li>
 		        	<li><%= link_to "New Code", new_code_path %></li>
 		        	<li><%= link_to "Edit Coder", edit_coder_registration_path %></li>
 		        	<li><%= link_to "Sign Out", destroy_coder_session_path, method: :delete %></li>
