@@ -94,21 +94,26 @@ textarea {
 .modal-content#tryagain {
 	background-image: url(coder1.png);
     background-repeat: no-repeat;
-    background-position: 0px 16px;
+    background-position: 15px 56px;
 }
 
 .modal-content#welldone {
     background-image: url(coder4.png);
     background-repeat: no-repeat;
-    background-position: -69px -45px;
+    background-position: 0px 36px;
 }
 
 .modal-body p {
-    margin: 15px 0px 0px 120px;
+    /*margin: 15px 0px 0px 120px;*/
+    margin: 38px 0px 0px 160px;
+    font-size: 19px;
 }
 
 .modal-body#welldonetext p {
-    margin: 15px 0px 0px 245px;
+    /*margin: 15px 0px 0px 245px;*/
+
+    margin: 32px 0px 0px 272px;
+    text-align: center;
 }
 
 #code_title {

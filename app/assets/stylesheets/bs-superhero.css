@@ -1281,7 +1281,8 @@
  }
  h4,
  .h4 {
- 	font-size: 19px;
+ 	/*font-size: 19px;*/
+ 	font-size: 29px;
  }
  h5,
  .h5 {
@@ -5962,9 +5963,13 @@
  	line-height: 1.42857143;
  }
  .modal-body {
- 	position: relative;
+ 	/*position: relative;
  	padding: 20px;
- 	height: 100px;
+ 	height: 100px;*/
+ 	/*jeremy*/
+ 	position: relative;
+    padding: 20px;
+    height: 200px;
  }
  .modal-footer {
  	padding: 20px;
@@ -7010,10 +7015,29 @@
  }
  .modal-header,
  .modal-footer {
- 	background-color: #485563;
+ 	/*background-color: #485563;
  	border: none;
- 	border-radius: 0;
+ 	border-radius: 0;*/
+ 	/*jeremy*/
+ 	background-color: #485563;
+    border: none;
+    border-radius: 0;
+    width: 599px;
+    margin: 0px 0px 0px -1px;
  }
  .popover-title {
  	border: none;
  }
+
+
+
+
+
+
+
+
+
+
+
+
+
