@@ -10,10 +10,11 @@
 				<!-- textarea should be one line with ruby code to show properly -->
 				<textarea rows="20" cols="100" readonly class="textareashow"><%= @code.content %></textarea>
 				<br><br>
-				
-				<%= link_to "Edit Code", edit_code_path(@code), class: "btn btn-primary btn-md" %>&nbsp;&nbsp;&nbsp;
-				<%= link_to "Delete Code", code_path(@code), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-md" %>&nbsp;&nbsp;&nbsp;
-				<%= link_to "My Codes", codes_path, class: "btn btn-success btn-md" %>
+				<div class="btn-show">
+					<%= link_to "Edit Code", edit_code_path(@code), class: "btn btn-primary btn-md" %>&nbsp;&nbsp;&nbsp;
+					<%= link_to "Delete Code", code_path(@code), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-md" %>&nbsp;&nbsp;&nbsp;
+					<%= link_to "My Codes", codes_path, class: "btn btn-success btn-md" %>
+				</div>
 			</div>
 		</div>
 	</div>

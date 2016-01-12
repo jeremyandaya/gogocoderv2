@@ -178,16 +178,15 @@ textarea {
 }
 
 #codes {
-	background: #4e5d6c;
-    width: 31%;
-    min-height: 175px;
+	/*background: #4e5d6c;*/
+    /*width: 31%;*/
+    /*min-height: 175px;*/
     margin: 10px 1%;
     padding: 0px 30px;
     float: left;
     border-radius: 0.4em;
     position: relative;
     border: 1px solid gray;
-    /*box-shadow: 3px 4px 10px black;*/
     box-shadow: 6px 6px 17px 0px rgba(0,0,0,0.46);
 }
 
@@ -452,4 +451,18 @@ div#drag td {
     font-size: 24px;
     border-radius: 0.4em;
 }
+
+.btn-show {
+    text-align: center;
+}
+
+.form-css {
+    text-align: center;
+}
+
+
+
+
+
+
 
